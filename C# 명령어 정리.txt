@@ -1,0 +1,13 @@
+Console.Read() = scanf("%c")
+Console.ReadLine() = scanf("%s")
+Console.Write = printf("\n")
+Console.WriteLine = printf("")
+{0}, {1}, {2} = %x, %y, %z(x, y, z는 미지수)
+"a" + "b" = ab
+Console.WriteLine($"v1 = {v1}, v2 = {v2}") = 중괄호 안에 있는 변수값을 출력
+4bit => 8bit = 암시적 형변환(자료 손실X)
+8bit => 4bit = 명시적 형변환(자료 손실O)(double 변수 x가 있을때 int로 바꾸는법 = (int)x;)
+Parse(), TryParse = 문자열 <=>숫자 변환 (문자열이 숫자가 아닐 때 = Parse = 에러, TryParse = false 반환)
+try {} catch = 예외(에러) 발생 시 처리하는 문장
+Convert 클래스 = string을 숫자형으로 바꾸는 여러 메소드를 제공
+ToString(), ToInt32() = 숫자를 원하는 진수로 처리 ex)ToString(123, 2) = 123을 2진수로 표현한 문자열로 변경

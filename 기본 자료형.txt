@@ -1,0 +1,4 @@
+부호있는 정수: sbyte, short, int, long
+부호없는 정수: byte, ushort, uint, ulong (u=unsigned)
+부동 소수점: float(접미사 f 사용 ex) float f = 1.23456789f), double
+Decimal(부동 소수점, 128bit): decimal(접미사 m 사용 ex) decimal d = 1.234m)
