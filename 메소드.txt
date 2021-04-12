@@ -1,0 +1,25 @@
+메소드
+Insert : string 안에 특정 위치에 string을 삽입
+Contains : 특정 문자/문자열을 포함하는지 true/false로 리턴
+CompareTo : string을 비교해서 작으면 -값, 같으면 0, 크면 +값을 리턴
+IndexOf : string에서 특정 문자 또는 문자열이 처음으로 나오는 Index를 리턴
+LastIndexOf : string에서 특정 문자 또는 문자열이 마지막으로 나오는 Index를 리턴
+PadLeft : string 앞에 특정 문자를 삽입하여 글자 수를 맞춤
+PadRight : string 뒤에 특정 문자를 삽입하여 글자 수를 맞춤
+Remove : string에서 substring을 삭제
+Replace : string에서 문자 혹은 substring을 다른 문자 혹은 substring으로 대체
+ToLower : string의 문자를 소문자로 변환
+ToUpper : string의 문자를 대문자로 변환
+Trim : string에서 앞뒤의 공백문자 또는 특정 문자를 제거
+TrimEnd : string의서 뒤의 공백문자 또는 특정 문자를 제거
+TrimStart : string의서 앞의 공백문자 또는 특정 문자를 제거
+Split : string에서 substring을 추출하여 새로운 string 배열을 리턴
+CopyTo : string의 일부분을 문자 배열로 복사
+Substring : string에서 특정 문자에서 끝까지의 substring을 추출
+
+스태틱 메소드
+Concat : 한 개 이상의 substring을 합쳐서 새로운 string을 만듬
+Compare : 두 개의 string을 비교해서 상대적인 위치를 리턴
+Copy : 현재 string을 복사하여 새로운 string을 만듬
+Format : 문자열을 포맷에 맞추어 변경
+Join : 배열이나 컬렉션의 멤버들을 모아 새로운 string을 만듬. 이때 멤버 사이에 구분자를 삽입
