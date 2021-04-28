@@ -1,3 +1,5 @@
+String : 한 번 만들면 값 변경 안됨
+StringBuilder : 값 변경 가능
 Capacity : StringBuilder 객체에 할당된 메모리가 허용하는 최대 문자수를 가져오거나 설정합니다.
 Length : StringBuilder 객체의 길이를 가져오거나 설정합니다.
 
