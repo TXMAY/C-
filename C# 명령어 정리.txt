@@ -25,3 +25,7 @@ delimiters={',', ' ', '-'}; s.Split(delimiters); = 빈칸, 콤마, -기호로 �
 const : 선언될 떄 값 할당됨, Classname.VariableName 으로 사용, 컴파일 시 값이 결정됨
 readonly : 실행될 때/객체가 생성자에 의해 초기화될 때 값 할당됨, Instance.VariableName으로 사용,
 런타임(컴퓨터 프로그램이 실행되고 있는동안의 동작) 시 값이 결정됨
+
+C# 자료형 : 값 형식, 참조 형식
+값 형식(변수가 실제 데이터 값을 저장하는 형식) : 기본 C# 형식(int, double, char, bool 등), enum, struct
+참조 형식(변수가 값이 저장 되어 있는 곳의 위치를 저장하는 형식) : object, string, dynamic, class, interface, delegate
