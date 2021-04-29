@@ -19,6 +19,15 @@ delimiters={',', ' ', '-'}; s.Split(delimiters); = 빈칸, 콤마, -기호로 �
 나타나는 인덱스를 리턴(0부터 시작, 문자열이 없으면 -1 리턴), StringComparison = 대소문자 구분하지 않는 비교
 
 조건연산자(조건) ? true : false;
+null : 어떤 객체도 참조하지 않는 참조형 변수
+Null 조건 연산자 ? : s가 null일 때는 Length를 찾지 않음(if (s?.Length > 0))
+nullable형 : 값 형식 변수에 null을 할당, Nullable <T>를 사용해서 선언, ==와 != 연산만 사용 가능, 다른 비교는 Nullable 클래스의 Compare() 메소드를 사용
+Nullable <int> => int?
+Nullable <double> => double?
+Nullable 타입을 non-nullable 타입에 할당 시 ?? 연산자 사용
+?? : null 일 때 0을 할당
+null을 숫자와 비교시 무조건 False 출력
+HasValue 속성 : 변수가 값을 가지면 true, null이면 false를 리턴
 
 열거형(서로 관련 있는 상수들의 집합의 정의) enum : 배열과 비슷함
 상수(변하지 않는 값) const, readonly
@@ -29,3 +38,12 @@ readonly : 실행될 때/객체가 생성자에 의해 초기화될 때 값 할�
 C# 자료형 : 값 형식, 참조 형식
 값 형식(변수가 실제 데이터 값을 저장하는 형식) : 기본 C# 형식(int, double, char, bool 등), enum, struct
 참조 형식(변수가 값이 저장 되어 있는 곳의 위치를 저장하는 형식) : object, string, dynamic, class, interface, delegate
+
+형식에 따른 기본값
+참조형식        null
+숫자 값 형식    0
+bool            false
+char            '\0'
+enum            식 (E)0 값 E = 열거형 식별자
+struct          모든 값 형식 필드를 기본값으로 설정하고 모든 참조 형식 필드를 null로 설정하여 생성한 값
+nullable 형식   HasValue 속성은 false이고 Value 속성은 정의되지 않은 인스턴스(같은 클래스에 속하는 개개의 객체)
