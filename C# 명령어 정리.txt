@@ -21,7 +21,8 @@ delimiters={',', ' ', '-'}; s.Split(delimiters); = 빈칸, 콤마, -기호로 �
 조건연산자(조건) ? true : false;
 null : 어떤 객체도 참조하지 않는 참조형 변수
 Null 조건 연산자 ? : s가 null일 때는 Length를 찾지 않음(if (s?.Length > 0))
-nullable형 : 값 형식 변수에 null을 할당, Nullable <T>를 사용해서 선언, ==와 != 연산만 사용 가능, 다른 비교는 Nullable 클래스의 Compare() 메소드를 사용
+nullable형 : 값 형식 변수에 null을 할당, Nullable <T>를 사용해서 선언, T는 데이터 형, ==와 != 연산만 사용 가능, 다른 비교는 Nullable 클래스의 Compare() 메소드를 사용
+이때 null 값은 모든 숫자보다 작다고 나옴
 Nullable <int> => int?
 Nullable <double> => double?
 Nullable 타입을 non-nullable 타입에 할당 시 ?? 연산자 사용
@@ -47,3 +48,10 @@ char            '\0'
 enum            식 (E)0 값 E = 열거형 식별자
 struct          모든 값 형식 필드를 기본값으로 설정하고 모든 참조 형식 필드를 null로 설정하여 생성한 값
 nullable 형식   HasValue 속성은 false이고 Value 속성은 정의되지 않은 인스턴스(같은 클래스에 속하는 개개의 객체)
+
+C#에서 모든 형식은 Object로 부터 상속됨 Object = object
+값 형식의 변수 => object : 박싱(Boxing)(값 형식의 변수 박싱 => object로 포장 => 힙에 저장)
+object => 값 형식의 변수 : 언박싱(Unboxing)(object => 값 형식을 꺼냄(형식변환을 위한 캐스팅 필요))
+object는 참조형식이기 때문에 힙((여러 개의 값 중에서 가장 크거나 작은 값을 빠르게 찾기 위해 만든 이진 트리(부모 노드 밑의 자닉 노드 개수를 최대 2개로 제한하는 트리)
+힙은 항상 완전 이진 트리(트리의 위부터 아래, 왼쪽부터 오른쪽의 순서로 빠짐없이 가득 차있는 이진 트리)의 형태를 띠어야 하고, 부모의 값은 항상 자식의 값보다 크거나, 작아야 함))에 데이터를 할당
+int나 double과 같은 값 형식의 자료는 스택(후입선출의 특성을 가지는 자료구조)에 데이터를 할당
