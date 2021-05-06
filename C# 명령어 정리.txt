@@ -1,7 +1,7 @@
 Console.Read() = scanf("%c")
 Console.ReadLine() = scanf("%s")
-Console.Write = printf("\n")
-Console.WriteLine = printf("")
+Console.Write() = printf("\n")
+Console.WriteLine() = printf("")
 {0}, {1}, {2} = %x, %y, %z(x, y, z는 미지수)
 "a" + "b" = ab
 Console.WriteLine($"v1 = {v1}, v2 = {v2}") = 중괄호 안에 있는 변수값을 출력
