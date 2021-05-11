@@ -1,0 +1,12 @@
+메소드
+Length : 배열 요소의 총 개수
+Rank : 배열의 차수(차원)
+Array.Sort(a) : a 배열을 오름차순으로 정렬
+Array.Reverse(a) : a 배열 요소들의 순서를 뒤집어줌
+Array.Clear(a) : a 배열을 초기화
+Clone() : 동일한 내용을 갖는 배열을 복사(얕은 복사, Object를 리턴)
+Array.Copy(a,n1,b,n2,len) : a 배열의 n1부터 len 길이만큼 b 배열의 n2에 복사
+CopyTo(b,n) : a 배열을 b 배열의 n 인덱스 위치에 복사
+GetLength(n) : n 차원의 요소 개수를 리턴(n은 0부터 시작)
+GetValue() : 인덱스 위치의 요소값을 리턴
+SetValue() : 인덱스 위치에 지정한 값을 저장
