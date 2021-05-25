@@ -1,0 +1,19 @@
+using System;
+
+// 여기에 사용할 .NET 네임스페이스를 정의한다
+// 예: 제네릭 컬렉션 -> using System.Collections.Generic;
+//     파일 입출력   -> using System.IO;
+//     정규표현식    -> using System.Text.RegularExpressions;
+namespace CSharpExample                     // 디폴트 값은 파일 이름
+{
+    // 모든 C# 클래스는 한 네임스페이스 안에 선언한다
+    
+    class Program                           // 클래스의 이름
+    {
+        // 여기에 멤버 변수, 프로퍼티, 메소드 등을 선언한다
+        static void Main(string[] args)     // 한정자(메소드의 속성을 수식)(static) 반환형식(void) 메소드의_이름(Main)(매개변수_목록(string[] args))
+        {
+            //여기에 돌아갈 코드를 작성한다
+        }    
+    }
+}
