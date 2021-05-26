@@ -7,13 +7,34 @@ using System;
 namespace CSharpExample                     // 디폴트 값은 파일 이름
 {
     // 모든 C# 클래스는 한 네임스페이스 안에 선언한다
-    
+    struct Alpha                            // a, b, c 필드(멤버 변수 ≒ 변수)를 가지는 구조체 Alpha 정의
+    {
+        public int a, b, c;
+
+        public void PrintAlpha()            // a, b, c 를 출력하는 메소드
+        {
+            Console.WriteLine("Alpha a = {0}, b = {1}, c = {2}", a, b, c);
+        }
+    }
+
+    class Beta                              // 똑같은 필드를 가지는 클래스 Beta 정의
+    {
+        public int a, b, c;
+        public static int d = 4;            // 클래스변수 d, static으로 선언하여 인스턴스(구조체와 클래스로 만들어지는 변수)를 생성하지 않아도 접근하여 사용할 수 있으며, new를 통한 인스턴스 생성시 static은 제외하고 생성됨
+    }
+
     class Program                           // 클래스의 이름
     {
-        // 여기에 멤버 변수, 프로퍼티, 메소드 등을 선언한다
+        // 여기에 멤버 변수(클래스에서 선언되는 모든 형식의 변수 = 필드), 프로퍼티, 메소드 등을 선언한다
         static void Main(string[] args)     // 한정자(메소드의 속성을 수식)(static) 반환형식(void) 메소드의_이름(Main)(매개변수_목록(string[] args))
         {
             //여기에 돌아갈 코드를 작성한다
-        }    
+            Alpha firsta;                   // Alpha 구조체 변수 firsta
+            Beta firstb = new Beta();       // Beta 클래스 변수 firstb, 참조형이므로 반드시 new 키워드 사용
+
+            Alpha alp = new
+
+            Console.WriteLine(Beta.d);
+        }
     }
 }
