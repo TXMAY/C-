@@ -31,9 +31,10 @@ namespace CSharpExample                     // 디폴트 값은 파일 이름
             //여기에 돌아갈 코드를 작성한다
             Alpha firsta;                   // Alpha 구조체 변수 firsta
             Beta firstb = new Beta();       // Beta 클래스 변수 firstb, 참조형이므로 반드시 new 키워드 사용
+                                            // 여기서 Console.WriteLine(Beta.)를 입력하면 클래스변수인 d에는 접근이 가능하지만 Beta라는 Class의 인스턴스가 생성되지 않았으므로 a, b, c라는 변수는 실체하지 않아 접근이 불가함
+            Beta bet = new Beta();          // Beta 클래스의 인스턴스 bet 생성
 
-            Alpha alp = new
-
+            Console.WriteLine(bet.a);       // 이젠 멤버변수인 a, b, c에 접근 가능, 그러나 클래스변수인 d는 존재하지 않음, static 멤버로서 실행시에 바로 메모리가 할당되어 더 이상 생성하지 않기 때문
             Console.WriteLine(Beta.d);
         }
     }
